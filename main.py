@@ -1,10 +1,20 @@
+#
 class Student:
-  def __init__(self, age, weight, height, first_name, last_name, catch_phrase):
+  def __init__(self, name, age, grade):
+    self.name = name
     self.age = age
-    self.weight = weight
-    self.height = height
-    self.first_name = first_name
-    self.last_name = last_name
-    self.catch_phrase = catch_phrase
+    self.grade = grade
+    
+  # display their information
+  def display_info(self):
+    print("Name: " + self.name)
+    print("Age: " + str(self.age))
+    print("Grade: " + str(self.grade))
+    print()
 
-  def 
+#Create at least two instances of the Student class with different attributes
+student1 = Student("leo", 15, "A")
+student2 = Student("John", 16, "A")
+
+student1.display_info()
+student2.display_info()
